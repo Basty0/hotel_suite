@@ -1,0 +1,40 @@
+.timeline-container {
+  border: 1px solid hsl(var(--border));
+  position: relative;
+}
+
+.timeline-container .rct-sidebar {
+  background-color: hsl(var(--background));
+  border-right: 1px solid hsl(var(--border));
+  padding: 0px;
+  z-index: 1;
+}
+
+/* Assurer que les réservations restent sous les popups */
+.timeline-container .rct-items {
+  z-index: 1;
+}
+
+/* Style pour le header de la timeline */
+.timeline-container .rct-header-root {
+  z-index: 2;
+  background-color: hsl(var(--background));
+}
+
+/* Style pour les popups */
+.timeline-container .rct-dateHeader {
+  z-index: 3;
+}
+
+/* Assurer que le Dialog est au-dessus de tout */
+[role="dialog"] {
+  z-index: 100;
+}
+
+/* Style pour les boutons de zoom */
+.zoom-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
+}
