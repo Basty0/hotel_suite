@@ -1,7 +1,7 @@
 import axios from "axios";
 import Cookies from "js-cookie"; // Importing Cookies
 
-const API_URL = "http://127.0.0.1:8000/api/reservations";
+const API_URL = "https://hotelsuite.inprogress.mg/public/api/reservations";
 
 const getAuthToken = async () => {
   return Cookies.get("userToken"); //

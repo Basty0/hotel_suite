@@ -61,3 +61,15 @@ export const deleteAchat = async (id) => {
     headers: { Authorization: `Bearer ${token}` },
   });
 };
+
+export const updateAchatStatus = async (achatId, data) => {
+  try {
+    const response = await axios.put(
+      `${API_URL}/achats/${achatId}/status`,
+      data
+    );
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+};
