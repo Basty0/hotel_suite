@@ -72,7 +72,7 @@ const CardPrepage = () => {
                       <CardFooter className=" ">
                         <div className="items-center justify-between absolute right-0 top-0">
                           <img
-                            src={`http://127.0.0.1:8000/${ch.image}`}
+                            src={`https://hotelsuite.inprogress.mg/public/${ch.image}`}
                             alt={`Chambre ${ch.numero_chambre}`}
                             className="w-20 h-full rounded-full border-2 border-primary "
                           />
